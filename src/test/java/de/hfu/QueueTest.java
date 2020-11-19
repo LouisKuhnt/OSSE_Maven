@@ -45,7 +45,7 @@ public class QueueTest
 		
 		q.enqueue(parameter);
 		assertEquals(0, q.tail);
-		assertEquals(0, q.tail);
+		assertEquals(0, q.head);
 		
 		q.enqueue(parameter1);
 		q.enqueue(parameter2);
