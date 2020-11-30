@@ -15,8 +15,8 @@ public class UtilTest
         assertTrue(Util.istErstesHalbjahr(4));
         assertTrue(Util.istErstesHalbjahr(6));
         assertTrue(Util.istErstesHalbjahr(2));
-        assertFalse(Util.istErstesHalbjahr(7));
         
+        assertFalse(Util.istErstesHalbjahr(7));
         assertFalse(Util.istErstesHalbjahr(10));
         assertFalse(Util.istErstesHalbjahr(12));
     }
@@ -29,6 +29,7 @@ public class UtilTest
     		fail("Erwartete Ausnahme wurde nicht geworfen");
     	}catch(IllegalArgumentException e) {
     	}
+    	
     	try {
     		Util.istErstesHalbjahr(13);
     		fail("Erwartete Ausnahme wurde nicht geworfen");

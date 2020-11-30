@@ -40,32 +40,20 @@ public class QueueTest
 		}
 	}
 	
-	@Test
-	public void testHeadAndTailPosition() {
-		
-		q.enqueue(parameter);
-		assertEquals(0, q.tail);
-		assertEquals(0, q.head);
-		
-		q.enqueue(parameter1);
-		q.enqueue(parameter2);
-		assertEquals(2, q.tail);
-		assertEquals(0, q.head);
-		
-		q.enqueue(parameter3);
-		assertEquals(2, q.tail);
-		assertEquals(0, q.head);
-		
-		q.dequeue();
-		assertEquals(2, q.tail);
-		assertEquals(1, q.head);
-		
-		q.dequeue();
-		assertEquals(2, q.tail);
-		assertEquals(2, q.head);
-		
-		q.enqueue(parameter);
-		assertEquals(3, q.tail);
-		assertEquals(2, q.head);
-	}
+	/*
+	 * @Test public void testHeadAndTailPosition() {
+	 * 
+	 * q.enqueue(parameter); assertEquals(0, q.tail); assertEquals(0, q.head);
+	 * 
+	 * q.enqueue(parameter1); q.enqueue(parameter2); assertEquals(2, q.tail);
+	 * assertEquals(0, q.head);
+	 * 
+	 * q.enqueue(parameter3); assertEquals(2, q.tail); assertEquals(0, q.head);
+	 * 
+	 * q.dequeue(); assertEquals(2, q.tail); assertEquals(1, q.head);
+	 * 
+	 * q.dequeue(); assertEquals(2, q.tail); assertEquals(2, q.head);
+	 * 
+	 * q.enqueue(parameter); assertEquals(3, q.tail); assertEquals(2, q.head); }
+	 */
 }
